@@ -82,8 +82,8 @@ describe('Emojis API Test', function() {
                 console.log('Negative Tests Complete')
                 done()
             })
-            it('Verify response code is 404', function (done) { //Going to leave this as a failure for demo
-                let expected = 404;
+            it('Verify response code is 405', function (done) { //Going to leave this as a failure for demo
+                let expected = 405;
                 let actual = response.statusCode;
                 addContext(this, {
                     title: 'Values:',
